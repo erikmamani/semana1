@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+        body{
+            background-color: aquamarine;
+            font-family: Arial, sans-serif;
+        }
+        #contenedor{
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: blueviolet;
+            border-radius: 20px;
+        }
+        header{
+            background-color: yellow;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        nav{
+            background-color: brown;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav ul li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav a{
+            color: antiquewhite;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        nav a:hover{
+            background-color: darkred;
+        }
+        main{
+            display: flex;
+            margin-top: 20px;
+        }
+        aside{
+            width: 200px;
+            background-color: chartreuse;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        article{
+            flex: 1;
+            background-color: cyan;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        section.noticia{
+            background-color: lightcoral;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        footer{
+            background-color: blueviolet;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px){
+            #contenedor{
+                width: 90%;
+                padding: 10px;
+            }
+            main{
+                flex-direction: column;
+            }
+            aside{
+                width: 100%;
+                margin-right: 0;
+            }
+            article{
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            Encabezado"inicio"
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+        <main>
+            <aside>
+                noticia
+            </aside>
+            <article>
+            La IA generativa automatiza la creación de contenido, mejora la interacción con los clientes y soluciona problemas complejos.
+             Con herramientas como ChatGPT (OpenAI) o Bard (Google), las empresas se benefician de la rápida creación de contenidos,
+              la generación de respuestas personalizadas a clientes e incluso del desarrollo del diseño de productos. 
+            </article>
+        </main>
+        <section class="noticia">
+            <h2>Última Noticia</h2>
+            <p><strong>Fecha:</strong> 3 de Mayo de 2025</p>
+            <p><strong>Título de la noticia:</strong> Un avance increíble en tecnología ha sido realizado hoy en la conferencia anual de innovaciones.</p>
+            <p>Este avance promete transformar la industria, ofreciendo soluciones más rápidas y eficaces para problemas que hasta ahora parecían insolucionables. Los expertos en tecnología están emocionados por las nuevas posibilidades y los grandes cambios que se avecinan.</p>
+        </section>
+        <footer>
+            Pie de Página
+        </footer>
+    </div>
+</body>
+</html>
